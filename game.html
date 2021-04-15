@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <section class="game">
+        <div class="intro">
+            <h1>Rock Paper Scissors</h1>
+            <input type="text" name="yourName" placeholder="Your Name" class="yourName" id="yourName">
+            <input type="button" class="play" id="play" value="Let's Play" onclick="enterName(); startGame();">
+        </div>
+        <div class="main fadeOut">
+            <div class="score">
+                <div class="player_score">
+                    <h2 id="player_name">Player</h2>
+                    <div class="player_result">0</div>
+                </div>
+                <div class="computer_score">
+                    <h2>Computer</h2>
+                    <div class="computer_result">0</div>
+                </div>
+            </div>
+            <div class="match">
+                <div class="winner"></div>
+                <br><br>
+                <div class="hands">
+                    <img class="player-hand" src="img/rock.png">
+                    <img class="computer-hand" src="img/rock.png">
+                </div>
+                <br><br>
+                <div class="options">
+                    <div class="rockDiv" onclick="choose(1);"><img class="rock" src="img/rock.png" alt=""></div>
+                    <div class="paperDiv" onclick="choose(2);"><img class="paper" src="img/paper.png" alt=""></div>
+                    <div class="scissorsDiv" onclick="choose(3);"><img class="scissors" src="img/scissors.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="game.js"></script>
+</body>
+
+</html>

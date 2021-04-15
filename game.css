@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+	height: 100vh;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.score {
+	height: 20vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: darkcyan;
+}
+
+.score h2 {
+	font-size: 30px;
+}
+
+.computer_score,
+.player_score {
+	display: inline-block;
+	text-align: center;
+}
+
+.player_name {
+	padding: 20px;
+}
+
+.player_result,
+.computer_result {
+	display: flex;
+	width: 150px;
+	height: 70px;
+	background-color: seashell;
+	color: darkcyan;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid darkcyan;
+	border-radius: 10px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.rock,
+.paper,
+.scissors {
+	width: 120px;
+}
+
+.rockDiv,
+.paperDiv,
+.scissorsDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	height: 180px;
+	border: 8px solid darkcyan;
+	border-radius: 50%;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.options {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rockDiv:hover {
+	border: 12px solid darkcyan;
+	background-color: seashell;
+}
+
+.paperDiv:hover {
+	border: 12px solid darkcyan;
+	background-color: seashell;
+}
+
+.scissorsDiv:hover {
+	border: 12px solid darkcyan;
+	background-color: seashell;
+}
+
+.main {
+	transition: opacity 1s ease 0.5s;
+}
+
+.winner {
+	color: darkcyan;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.hands {
+	padding-left: 200px;
+	padding-right: 200px;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.computer-hand {
+	transform: rotateY(180deg);
+}
+
+.hands img {
+	width: 300px;
+}
+
+.intro {
+	position: absolute;
+	top: 20vh;
+	margin: auto;
+	width: 100%;
+	color: darkcyan;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+	font-size: 60px;
+}
+
+.yourName {
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+	border: 5px solid darkcyan;
+	color: darkcyan;
+}
+
+.yourName:hover {
+	box-shadow: 0px 5px rgb(180, 180, 180);
+}
+
+.yourName:focus {
+	box-shadow: 0px 5px rgb(180, 180, 180);
+}
+
+.play {
+	width: 200px;
+	height: 70px;
+	font-size: 30px;
+	font-weight: bolder;
+	border: 5px solid darkcyan;
+	background-color: seashell;
+	border-radius: 15px;
+	color: darkcyan;
+	cursor: pointer;
+}
+
+.play:hover {
+	color: seashell;
+	background-color: darkcyan;
+}
+
+.welcome {
+	opacity: 0;
+	pointer-events: none;
+}
+
+div.fadeOut {
+	opacity: 0;
+	pointer-events: none;
+}
+
+div.fadeIn {
+	opacity: 1;
+	pointer-events: all;
+}
