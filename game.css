@@ -188,6 +188,16 @@ div.fadeIn {
 	pointer-events: all;
 }
 
+@media screen and (max-width: 1200px) {
+	.yourName:hover {
+		box-shadow: none;
+	}
+
+	.yourName:focus {
+		box-shadow: none;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	.intro {
 		position: absolute;
@@ -215,14 +225,6 @@ div.fadeIn {
 		border-radius: 10px;
 		border: 4px solid darkcyan;
 		color: darkcyan;
-	}
-
-	.yourName:hover {
-		box-shadow: none;
-	}
-
-	.yourName:focus {
-		box-shadow: none;
 	}
 
 	.play {
