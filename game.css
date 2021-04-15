@@ -218,11 +218,11 @@ div.fadeIn {
 	}
 
 	.yourName:hover {
-		box-shadow: 0px 4px rgb(180, 180, 180);
+		box-shadow: none;
 	}
 
 	.yourName:focus {
-		box-shadow: 0px 4px rgb(180, 180, 180);
+		box-shadow: none;
 	}
 
 	.play {
